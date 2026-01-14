@@ -1,12 +1,19 @@
-import CnpjForm from "@/components/CnpjForm";
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import Problem from "@/components/Problem";
+import Process from "@/components/Process";
+import Audience from "@/components/Audiance";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-zinc-50">
-        <CnpjForm />
-      </main>
-    </div>
+    <main className="bg-slate-950 text-slate-100">
+      <Hero />
+      <Problem />
+      <Process />
+      <Audience />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
